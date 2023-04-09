@@ -19,6 +19,7 @@ public class Ex3_강의과제3_1_행렬 {
 		for (int i = 0; i < 5; i++) {
 			for (int j = 0; j < 7; j++) {
 				System.out.print(m[i][j]);
+				
 				System.out.print(" ");
 				
 			}
