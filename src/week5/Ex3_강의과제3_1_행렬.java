@@ -16,6 +16,7 @@ public class Ex3_강의과제3_1_행렬 {
 
 		m[4][0] = 0; m[4][1] = 0; m[4][2] = 3; m[4][3] = 2; m[4][4] = 0; m[4][5] = 2; m[4][6] = 0;
 		
+		
 		for (int i = 0; i < 5; i++) {
 			for (int j = 0; j < 7; j++) {
 				System.out.print(m[i][j]);
