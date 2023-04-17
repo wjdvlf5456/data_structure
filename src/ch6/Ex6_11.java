@@ -61,7 +61,7 @@ public class Ex6_11 {
 		
 		temp = L.getHead();	// 월
 
-		System.out.printf("Double Linked List L = (");
+		System.out.printf("Double Linked List L2 = (");
 		while (temp != null) {
 			System.out.printf(temp.getData());
 			pre = temp;
@@ -71,31 +71,38 @@ public class Ex6_11 {
 		}
 		System.out.println(")");
 		System.out.println("");
-		
-		DblNode ddd = new DblNode();
-		ddd.setData("화");
-		
-		L.deleteNode(L, ddd);
-		
-		temp = L.getHead();	// 월
 
-		System.out.printf("Double Linked List L = (");
-		while (temp != null) {
-			System.out.printf(temp.getData());
-			pre = temp;
-			temp = temp.rlink;
-			if (temp != null)
-				System.out.print(", ");
-		}
-		System.out.println(")");
-		System.out.println("");
-		
-		
 		
 		
 		// 이 리스트에서 "목", "토"를 차례로 삭제하기, 즉, L={월,화,수,금}
 		// 이 리스트 L을 역방향으로 출력하기
 		//
+		pre = L.getHead();
+		pre = pre.rlink;
+		pre = pre.rlink;
+		pre = pre.rlink;
+		L.deleteNode(L, pre);
+		pre = pre.rlink;
+		pre = pre.rlink;
+		L.deleteNode(L, pre);
+		pre = pre.llink;
+		
+		
+		temp = pre;	// 월
+		
+		System.out.printf("Double Linked List Reverse L2 = (");
+		while (temp != null) {
+			System.out.printf(temp.getData());
+
+			pre = temp;
+			temp = temp.llink;
+			if (temp != null)
+				System.out.print(", ");
+		}
+		System.out.println(")");
+		System.out.println("");
+		
+		
 	}
 }
 
@@ -134,18 +141,19 @@ class DblLinkedList {
 		}
 	}
 
-	public DblNode deleteNode(DblLinkedList L, DblNode old) {
+	public void deleteNode(DblLinkedList L, DblNode old) {
 		//
 		// 알고리즘 6-12를 참고하여 프로그램을 완성하기
-		//
-		//L.head.setData(old.getData());
-		//System.out.println(L.head.getData());
-		DblNode del = new DblNode();
-		del.setData("화");
-		del.rlink = old.llink; 
-		del.llink = old.rlink; 
+		if(L.head != null && old !=null) {
+			if(old.llink != null && old != null) {
+				if(old.llink != null)old.llink.rlink = old.rlink;
+				else L.head = old.rlink;
+				if(old.rlink != null)old.rlink.llink =old.llink;
+				
+			}
+			
+		}
 		
-		return del;
 	}
 
 	@Override
