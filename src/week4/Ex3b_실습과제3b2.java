@@ -2,6 +2,8 @@ package week4;
 
 public class Ex3b_실습과제3b2 {
 
+	
+	
 	public static void main(String[] args) {
 		List la = new List();
 		int[] b = new int[] { 1, 2, 3, 4 };

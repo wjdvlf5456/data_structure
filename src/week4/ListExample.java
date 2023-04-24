@@ -20,6 +20,7 @@ class List {
 	int len;
 	int l[] = new int[100];
 
+
 	List() {
 		this.len = 0;
 	}
