@@ -15,6 +15,7 @@ public class Ex5_5 {
 			{ 5, 6, 6 }, 
 			{ 6, 0, 52}, 
 			{ 7, 4, 11}});
+		
 
 		System.out.println("a matrix:");
 		a.printMatrix();
