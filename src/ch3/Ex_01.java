@@ -15,6 +15,7 @@ public class Ex_01 {
 		text[1] = 'b';
 		text[2] = 'c';
 
+		
 		for (int i = 0; i < 3; i++) {
 			System.out.print("Input " + text[i] + " : ");
 			number[i] = sc.nextInt();
