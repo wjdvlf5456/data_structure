@@ -46,6 +46,7 @@ public class Ex8_3 {
 		LQ.enQueue('N');
 		LQ.enQueue('O');
 		
+		
 		LQ.enQueue('P');
 		LQ.enQueue('Q');
 		LQ.enQueue('R');
