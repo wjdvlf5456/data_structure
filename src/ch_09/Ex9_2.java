@@ -17,6 +17,8 @@ public class Ex9_2 {
 		bsT.insertBST('E');
 		bsT.insertBST('Q');
 
+		
+		
 		System.out.printf("\nBinary Tree >>> ");
 		bsT.printBST();
 
