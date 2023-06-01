@@ -34,7 +34,6 @@ public class Ex9_3 {
 		h.printHeap();
 		
 		
-		
 		n = h.getHeapSize();
 		
 		for(int i=1; i<=n; i++) {
