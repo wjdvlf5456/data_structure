@@ -4,6 +4,7 @@ public class Ex9_2 {
 
 	public static void main(String[] args) {
 		BinarySearchTree bsT = new BinarySearchTree();
+		
 		bsT.insertBST('G');
 		bsT.insertBST('I');
 		bsT.insertBST('H');

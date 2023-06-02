@@ -16,31 +16,21 @@ public class Ex9_3 {
 		h.insertHeap(32);
 		
 		h.printHeap();
-		
-		//n = h.getHeapSize();
-		n = 4;
-		
-		for(int i=1; i<=n; i++) {
-			item = h.deleteHeap();
-			System.out.printf("\n deleted Item : [%d]", item, args);
-		}
-		
-		h.insertHeap(50);
-		h.insertHeap(40);
-		h.insertHeap(45);
-		h.insertHeap(55);
-		h.insertHeap(38);
-		
-		h.printHeap();
-		
-		
-		n = h.getHeapSize();
-		
-		for(int i=1; i<=n; i++) {
-			item = h.deleteHeap();
-			System.out.printf("\n deleted Item : [%d]", item, args);
-		}
-		
+//		
+//		//n = h.getHeapSize();
+//		n = 4;
+//		
+//		for(int i=1; i<=n; i++) {
+//			item = h.deleteHeap();
+//			System.out.printf("\n deleted Item : [%d]", item, args);
+//		}
+//		h.insertHeap(50);
+//		h.insertHeap(40);
+//		h.insertHeap(45);
+//		h.insertHeap(55);
+//		h.insertHeap(38);
+//		
+//		h.printHeap();
 		
 		
 	}
