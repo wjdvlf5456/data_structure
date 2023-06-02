@@ -16,6 +16,7 @@ public class Ex9_1 {
 		TreeNode n2 = T.makeBT(n4, 'B', n5);
 		TreeNode n1 = T.makeBT(n2, 'A', n3);
 		
+		
 		System.out.print("Preorder : ");
 		T.preorder(n1);
 		
