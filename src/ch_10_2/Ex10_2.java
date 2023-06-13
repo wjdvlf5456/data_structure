@@ -5,9 +5,9 @@ public class Ex10_2 {
 	public static void main(String args[]) {
 		AdjList G9 = new AdjList();
 
-		for (int i = 0; i < 7; i++)
+		for (int i = 0; i < 7; i++) {
 			G9.insertVertex(i);
-
+		}
 		// 교재에 있는 그래프
 		G9.insertEdge(0, 2);
 		G9.insertEdge(0, 1);
@@ -98,7 +98,6 @@ public class Ex10_2 {
 		System.out.printf("\n 너비우선탐색 5 >> ");
 		G9.BFS(5);
 
-		
 		// findCycle 함수를 완성한 후에 아래 문장들을 실행하시오.
 		/*
 		 * System.out.printf("\n\n Cycle 찾기 0 >> "); G9.findCycle(0);
