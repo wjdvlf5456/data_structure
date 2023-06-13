@@ -15,6 +15,7 @@ public class Ex10_2 {
 		G9.insertEdge(1, 4);
 		G9.insertEdge(1, 3);
 		//G9.insertEdge(1, 0);
+		
 
 		G9.insertEdge(2, 4);
 		G9.insertEdge(2, 0);
