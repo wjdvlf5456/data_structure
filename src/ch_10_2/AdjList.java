@@ -56,14 +56,69 @@ public class AdjList {
 	};
 
 	public void DFSnew(int v) {
-		// 위 DFS 함수가 정상적으로 동작하도록 코드를 작성하시오.
-		//
+		GraphNode w = new GraphNode();
+		LinkedStack S = new LinkedStack();
+		;
+		boolean visited[] = new boolean[10];
+		visited[v] = true;
+		System.out.printf(" %c", v + 65);
+		while (true) {
+			w = head[v];
+			while (w != null) {
+				if (visited[w.vertex] == false) {
+					S.push(v);
+					visited[w.vertex] = true;
+					System.out.printf(" %c", w.vertex + 65);
+					v = w.vertex;
+					w = head[v];
+
+				} else
+					w = w.link;
+
+			}
+			if (S.top == null) {
+				return;
+			} else {
+				v = S.pop();
+			}
+		}
+
 	}
 
 	public void findCycle(int v) {
-		//
-		// 위 DFSnew 함수를 이용하여 싸이클을 찾는 함수를 작성하시오.
-		//
+		GraphNode w = new GraphNode();
+		int startNode;
+		LinkedStack S = new LinkedStack();
+		boolean visited[] = new boolean[10];
+		startNode = v;
+
+		// DFS코드 입력
+		System.out.printf(" %c", v + 65);
+		while (true) {
+			w = head[v];
+			while (w != null) {
+				if (S.stackSize >= 2 && startNode == w.vertex) {
+					System.out.printf(" %c --> 싸이클 존재함 !!", w.vertex + 65);
+					return;
+				}
+				if (visited[w.vertex] == false) {
+					S.push(v);
+					visited[w.vertex] = true;
+					System.out.printf(" %c", w.vertex + 65);
+					v = w.vertex;
+					w = head[v];
+
+				} else {
+					w = w.link;
+				}
+			}
+			if (S.top == null) {
+				return;
+			} else {
+				v = S.pop();
+			}
+		}
+
 	}
 
 	public void BFS(int v) {
