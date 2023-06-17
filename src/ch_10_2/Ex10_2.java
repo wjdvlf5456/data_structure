@@ -9,6 +9,7 @@ public class Ex10_2 {
 			G9.insertVertex(i);
 		}
 		// 교재에 있는 그래프
+		/*
 		G9.insertEdge(0, 2);
 		G9.insertEdge(0, 1);
 
@@ -28,21 +29,21 @@ public class Ex10_2 {
 		G9.insertEdge(6, 5);
 		G9.insertEdge(6, 4);
 		G9.insertEdge(6, 3);
-
+		*/
+		
 // 교재에 없는 새로운그래프
-//		G9.insertEdge(0,1);
-//		G9.insertEdge(0,2);
-//		G9.insertEdge(1,0);
-//		G9.insertEdge(2,0);
-//		G9.insertEdge(2,4);
-//		G9.insertEdge(2,5);
-//		G9.insertEdge(3,4);
-//		G9.insertEdge(4,2);
-//		G9.insertEdge(4,3);
-//		G9.insertEdge(4,5);	
-//		G9.insertEdge(5,2);
-//		G9.insertEdge(5,4);
-
+		G9.insertEdge(0,1);
+		G9.insertEdge(0,2);
+		G9.insertEdge(1,0);
+		G9.insertEdge(2,0);
+		G9.insertEdge(2,4);
+		G9.insertEdge(2,5);
+		G9.insertEdge(3,4);
+		G9.insertEdge(4,2);
+		G9.insertEdge(4,3);
+		G9.insertEdge(4,5);	
+		G9.insertEdge(5,2);
+		G9.insertEdge(5,4);
 		System.out.printf("\n 그래프 G9의 인접리스트 : ");
 		G9.printAdjList();
 		System.out.println();
