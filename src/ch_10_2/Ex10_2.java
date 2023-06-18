@@ -8,6 +8,7 @@ public class Ex10_2 {
 		for (int i = 0; i < 7; i++) {
 			G9.insertVertex(i);
 		}
+		
 		// 교재에 있는 그래프
 		/*
 		G9.insertEdge(0, 2);
