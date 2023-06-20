@@ -9,6 +9,7 @@ public class Ex7_1 {
 
 		S.push('A');
 		S.printStack();
+		
 
 		S.push('B');
 		S.printStack();
